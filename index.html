@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="stylesheet" href="./assets/style/base.css">
+    <link rel="stylesheet" href="./assets/style/grid.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+    <link rel="stylesheet" href="./assets/style/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css">
+    <title>Clone Shoppe</title>
+</head>
+<body>
+    <div class="app">
+        <div id="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-qr .header__navbar-item--seperate">
+                            Vào cửa hàng trên ứng dụng F8-SHOP
+                            <div class="header__qr">
+                                <img src="./assets/img/qecode.png" alt="QR code" class="header__img-qr">
+                                <div class="devices-logo">
+                                    <a href="" class="header-qr-link">
+                                        <img src="./assets/img/appstore.png" alt="" class="header__img-ios">
+                                    </a>
+                                    <a href="" class="header-qr-link">
+                                        <img src="./assets/img/androd.png" alt="" class="header__img-and">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--nopointer">Kết nối</span>
+                            <a href="" class="header__navbar-item-icon">
+                                <i class=" fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-item-icon">
+                                <i class=" fa-brands fa-instagram"></i>
+                            </a>  
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-link--hasNotify">
+                            <a href="" class="header__navbar-item-link ">
+                                <i class="icon-css far fa-bell"></i>
+                                Thông báo</a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item .header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://img.tickid.vn/photos/resized/200x120/83-1574758841-myphamohui-lgvina.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">San Pham mot</span>
+                                                <span class="header__notify-description">qeqweqweqweqweqweqweqweqweqeqeqw</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://img.tickid.vn/photos/resized/200x120/83-1574758841-myphamohui-lgvina.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">San Pham mot</span>
+                                                <span class="header__notify-description">qeqweqweqweqweqweqweqweqweqeqeqw</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://img.tickid.vn/photos/resized/200x120/83-1574758841-myphamohui-lgvina.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">San Pham mot</span>
+                                                <span class="header__notify-description">qeqweqweqweqweqweqweqweqweqeqeqw</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="icon-css fa-solid fa-circle-question"></i>
+                                Trợ giúp</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-bold .header__navbar-item--seperate">
+                            <button class="signup-button">Đăng ký</button>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-bold">
+                            <button class="login-button">Đăng nhập</button>
+                        </li>
+                    </ul>
+                </nav>  
+                <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
+                        <img class="header__logo-img" src="./assets/img/logo-full-white.png" alt="">
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input class="header__search-input" type="text" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <!-- header search history -->
+                            <div class="header__search-history">
+                                <h3>Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem dưỡng da</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Kem trị mụn</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-glass">
+                            <i class="icon-glass fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart-notice">5</span>
+                            <!-- No cart : header__cart-icon--no-cart -->
+                            <!-- <div class="header__cart--no-cart">
+                                <img src="./assets/img/no-cart.png" alt="">
+
+                            </div> -->
+                            <div class="header__cart-listitem">
+                                <h3>Sản phẩm đã thêm</h3>
+                                <ul class="header__cart-itemtcontainer">
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/cart-item.jpg" alt="">
+                                        <div class="header__cart-item-nameandtype">
+                                            <h4>Bộ đồ chơi trẻ em</h4>
+                                            <p>Phân loại: bạc</p>
+                                        </div>
+                                        <div class="header__cart-item-priceandelete">
+                                            <p>2.000.000 <span>x 2</span></p>
+                                            <button>Xóa</button>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/cart-item.jpg" alt="">
+                                        <div class="header__cart-item-nameandtype">
+                                            <h4>Bộ đồ chơi trẻ em</h4>
+                                            <p>Phân loại: bạc</p>
+                                        </div>
+                                        <div class="header__cart-item-priceandelete">
+                                            <p>2.000.000 <span>x 2</span></p>
+                                            <button>Xóa</button>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/cart-item.jpg" alt="">
+                                        <div class="header__cart-item-nameandtype">
+                                            <h4>Bộ đồ chơi trẻ em</h4>
+                                            <p>Phân loại: bạc</p>
+                                        </div>
+                                        <div class="header__cart-item-priceandelete">
+                                            <p>2.000.000 <span>x 2</span></p>
+                                            <button>Xóa</button>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/cart-item.jpg" alt="">
+                                        <div class="header__cart-item-nameandtype">
+                                            <h4>Bộ đồ chơi trẻ em</h4>
+                                            <p>Phân loại: bạc</p>
+                                        </div>
+                                        <div class="header__cart-item-priceandelete">
+                                            <p>2.000.000 <span>x 2</span></p>
+                                            <button>Xóa</button>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/cart-item.jpg" alt="">
+                                        <div class="header__cart-item-nameandtype">
+                                            <h4>Bộ đồ chơi trẻ em</h4>
+                                            <p>Phân loại: bạc</p>
+                                        </div>
+                                        <div class="header__cart-item-priceandelete">
+                                            <p>2.000.000 <span>x 2</span></p>
+                                            <button>Xóa</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="header__cart-watch-btn">
+                                    <button>Xem giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="header-sort-bar-list">
+                <li class="header-sort-item">
+                    <a href="" class="header-sort-link">Liên quan</a>
+                </li>
+                <li class="header-sort-item ">
+                    <a href="" class="header-sort-link header-sort-item--active">Mới nhất</a>
+                </li>
+                <li class="header-sort-item">
+                    <a href="" class="header-sort-link">Bán chạy</a>
+                </li>
+                <li class="header-sort-item">
+                    <a href="" class="header-sort-link">Giá</a>
+                </li>
+            </ul>
+        </div>
+        <!-- content -->
+        
+        <div class="app-container">
+            <header class="header">
+            </header>
+            
+            <div class="container">
+                <div class="grid wide">
+                    <div class="row sm-gutter">
+                        <div class="col l-2 m-0 c-0">
+                            <nav class="category hide-on-mobile-tablet">
+                                <h3 class="category_heading">Danh mục</h3>
+                                <ul class="category-list">
+                                    <li class="category-item ">
+                                        <a href="" class="category-item_link category-item--active">Trang điểm mặt</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item_link">Trang điểm môi</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item_link">Trang điểm mặt</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col l-10 m-12 c-12">
+                            <div class="home-filter hide-on-mobile-tablet">
+                                    <span class="home-filter_label">Sắp xếp theo</span>
+                                    <button class="btn">Phổ biến</button>
+                                    <button class="btn btn-primarycolor">Mới nhất</button>
+                                    <button class="btn">Bán chạy</button>
+                                    <div class="select-input">
+                                        <span class="select-input_label">Giá</span>
+                                        <i class="select-input_label fas fa-angle-down"></i>
+                                        <ul class="select-input-list">
+                                            <li class="select-input-item mt-8">
+                                                <a href="" class="select-input-item-link">Giá: Từ cao đến thấp</a>
+                                            </li>
+                                            <li class="select-input-item">
+                                                <a href="" class="select-input-item-link">Giá: Từ thấp đến cao</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            
+                                <div class="home-filter_page">
+                                    <span class="home-filter_page-num">
+                                        <span class="home-filter_page-current">1</span>/14
+                                    </span>
+                                    <div class="home-filter_page-control">
+                                        <a href="" class="home-filter_page-btn home-filter_page-btn--disable">
+                                            <i class="icon-size fas fa-angle-left"></i>
+                                        </a>
+                                        <a href="" class="home-filter_page-btn">
+                                            <i class="icon-size fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <nav class="mobile-category">
+                                <ul class="mobile-category__list">
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="home-product">
+                                <div class="grid_row-item sm-gutter">
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item_img" style="background-image: url(./assets/img/chup-anh-san-pham-shynh2019-4.jpg);"></div>
+                                            <h4 class="home-product-item_name">Bộ đồ chơi trẻ em thế hệ mới nhất</h4>
+                                            <div class="home-product-item_price">
+                                                <span class="home-product-item_old-price">1.200.000đ</span>
+                                                <span class="home-product-item_current-price">900.000đ</span>
+                                            </div>
+                                            <div class="home-product-item_action">
+                                                <span class="home-product-item_like">
+                                                    <i class="home-product-item_like-icon far fa-heart"></i>
+                                                    <i class="home-product-item_liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item_rating">
+                                                    <i class="home-product-item_rating--star-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item_rating--star-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item_rating--star-gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item_rating--star-gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item_sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item_origin">
+                                                <span class="home-product-item_brand">Whoo</span>
+                                                <span class="home-product-item_coutnry">Nhật bản</span>
+                                            </div>
+                                            <div class="home-product-item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item_sale-off">
+                                                <span class="home-product-item_sale-off-percent">10%</span>
+                                                <span class="home-product-item_sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="home-product--footer">
+                                    <i class="home-product--footer-iconleft fas fa-angle-left"></i>
+                                    <a href="" class="home-product--footer-number home-product--footer-number--active">1</a>
+                                    <a href="" class="home-product--footer-number">2</a>
+                                    <a href="" class="home-product--footer-number">3</a>
+                                    <a href="" class="home-product--footer-number">4</a>
+                                    <a href="" class="home-product--footer-number">5</a>'
+                                    <span>...</span>
+                                    <a href="" class="home-product--footer-number">14</a>
+                                    <i class="home-product--footer-iconright fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <footer class="footer">
+                
+            </footer>
+        </div>  
+    
+        <footer id="footer">
+            <div class="grid-footer">
+                <div class="footer_item l-3 col m-4 c-6 footer_item-ml-tablet">
+                    <h3 class="footer_header ">Chăm sóc khách hàng</h3>
+                    <ul class="footer_list">
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">Trung tâm Trợ Giúp</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">F8-Shop Mall</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">Hướng dẫn mua hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_item l-2 m-4 c-6">
+                    <h3 class="footer_header">Giới thiệu</h3>
+                    <ul class="footer_list">
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">Giới thiệu</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">Tuyển dụng</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">Điều khoản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_item l-2 m-4 c-6 footer_item-ml-tablet">
+                    <h3 class="footer_header">Danh Mục</h3>
+                    <ul class="footer_list">
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">Trang điểm mặt</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">Trang điểm môi</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">Trang điểm mắt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_item l-2 m-4 c-6">
+                    <h3 class="footer_header">Theo dõi</h3>
+                    <ul class="footer_list">
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">
+                                <i class="footer_list-icon fa-brands fa-facebook"></i>
+                                Facebook</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">
+                                <i class="footer_list-icon fa-brands fa-instagram"></i>
+                                instagram</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="" class="footer_list-item--link">
+                                <i class="footer_list-icon fa-brands fa-youtube"></i>
+                                Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_item l-3 m-8 c-12">
+                    <h3 class="footer_header">Vào cửa hàng trên ứng dụng</h3>
+                    <div class="footer_app">
+                        <img src="./assets/img/qecode.png" alt="QR code" class="footer_app-img">
+                        <div class="footer_app-logo">
+                            <a href="" class="footer_app-logo-link">
+                                <img src="./assets/img/appstore.png" alt="" class="footer_logo-ios">
+                            </a>
+                            <a href="" class="footer_app-logo-link">
+                                <img src="./assets/img/androd.png" alt="" class="footer_logo-and">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+        <div class="author-section">
+            <p>© 2022 - Bản quyền thuộc về ThinhjBeos</p>
+        </div>
+        <!-- Login modal -->
+        <div class="modal-login">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <div class="modal__inner">
+                    <div class="modal__header">
+                        <h3>Đăng nhập</h3>
+                        <button class="modal-close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="form-input">
+                        <input class="form-input-username" name="username" type="text" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                        <input class="form-input-password" name="password" type="password"  placeholder="Mặt khẩu">
+                    
+                    </div>
+                    <div class="modal-header"></div>
+                    <button class="login-btn">ĐĂNG NHẬP</button>
+                    
+                    <div class="forget-loginwith">
+                        <a href="" class="forget-loginwith-item">Quên mật khẩu</a>
+                        <a href="" class="forget-loginwith-item">Đăng nhập với SMS</a>
+                    </div>
+                    <div class="OR-item">
+                        <span>HOẶC</span>
+                    </div>
+                    <div class="login-mediasocial">
+                        <button class="login-mediasocial-btn">
+                            <i class="icon-fb fa-brands fa-facebook"></i>
+                            Facebook
+                        </button>
+                        <button class="login-mediasocial-btn">
+                            <i class="icon-gg fa-brands fa-google"></i>
+                            Google
+                        </button>
+                        <button class="login-mediasocial-btn">
+                            <i class="icon-apple fa-brands fa-apple"></i>
+                            Apple
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="modal-footer-item">
+                            <span> Bạn mới biết đến Shopee?</span>
+                            <button class="modal-footer-signup-btn" >Đăng ký</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal signup -->
+        <div class="modal-signup">
+            <div class="modal__overlay--signup"></div>
+            <div class="modal__body-signup">
+                <div class="modal__inner">
+                    <div class="modal__header">
+                        <h3>Đăng ký</h3>
+                        <button class="modal-close-btn--signup">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="form-input">
+                        <input class="form-input-username" name="username" type="text" placeholder="Email/Tên tài khoản">
+                        <input class="form-input-username" name="username" type="text" placeholder="Mật khẩu">
+                        
+                    </div>
+                    <button class="signup-btn">TIẾP THEO</button>
+                    <div class="OR-item">
+                        <span>HOẶC</span>
+                    </div>
+                    <div class="signup-mediasocial">
+                        <button class="signup-mediasocial-btn">
+                            <i class="icon-fb fa-brands fa-facebook"></i>
+                            Facebook
+                        </button>
+                        <button class="signup-mediasocial-btn signup-gg-btn">
+                            <i class="icon-gg fa-brands fa-google"></i>
+                            Google
+                        </button>
+                    </div>
+                    <div class="modal-signup-info">
+                        <p>Bằng việc đăng kí, bạn đã đồng ý với Shopee về</p>
+                        <a href="">Điều khoản dịch vụ <span>&</span></a>
+                        <a href="">Chính sách bảo mật</a>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="modal-footer-item">
+                            <span>Bạn đã có tài khoản?</span>
+                            <button class="modal-footer-login-btn" >Đăng nhập</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
